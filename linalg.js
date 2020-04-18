@@ -53,8 +53,8 @@ Array.prototype.mean = function() {
 * Computes the dot product between the calling array and the parameter array.
 * @return {Number} Dot product value.
 */
-Array.prototype.dot = functions(arr){
-  if (this.length !== arr.length) throw 'Arrays should have the same length'.
+Array.prototype.dot = function(arr) {
+  if (this.length !== arr.length) throw 'Arrays should have the same length';
 
   let res = 0;
   for (var i = 0; i < this.length; i++) {
